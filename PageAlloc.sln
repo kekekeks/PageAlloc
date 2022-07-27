@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{15625C58-033E-457A-9C68-B55651F40A12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7F776B9E-3B31-4C57-A96A-DF00E1C76795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageAlloc", "src\PageAlloc\PageAlloc.csproj", "{480CFAF6-DE9D-481E-9589-B58344AF7FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageAllocTests", "tests\PageAllocTests\PageAllocTests.csproj", "{26967434-2BA1-4AED-B4CA-2BC1679EE5E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageAlloc.Memory", "src\PageAlloc.Memory\PageAlloc.Memory.csproj", "{0648C596-7058-4528-B49C-05F172D7B361}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{480CFAF6-DE9D-481E-9589-B58344AF7FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480CFAF6-DE9D-481E-9589-B58344AF7FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480CFAF6-DE9D-481E-9589-B58344AF7FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480CFAF6-DE9D-481E-9589-B58344AF7FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26967434-2BA1-4AED-B4CA-2BC1679EE5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26967434-2BA1-4AED-B4CA-2BC1679EE5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26967434-2BA1-4AED-B4CA-2BC1679EE5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26967434-2BA1-4AED-B4CA-2BC1679EE5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0648C596-7058-4528-B49C-05F172D7B361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0648C596-7058-4528-B49C-05F172D7B361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0648C596-7058-4528-B49C-05F172D7B361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0648C596-7058-4528-B49C-05F172D7B361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{480CFAF6-DE9D-481E-9589-B58344AF7FC5} = {15625C58-033E-457A-9C68-B55651F40A12}
+		{26967434-2BA1-4AED-B4CA-2BC1679EE5E1} = {7F776B9E-3B31-4C57-A96A-DF00E1C76795}
+		{0648C596-7058-4528-B49C-05F172D7B361} = {15625C58-033E-457A-9C68-B55651F40A12}
+	EndGlobalSection
+EndGlobal
