@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageAllocTests", "tests\Pag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageAlloc.Memory", "src\PageAlloc.Memory\PageAlloc.Memory.csproj", "{0648C596-7058-4528-B49C-05F172D7B361}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{8D43421E-AB0A-43C1-A033-468BFF2DC9B0}"
+	ProjectSection(SolutionItems) = preProject
+		build\SharedVersion.props = build\SharedVersion.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

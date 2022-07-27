@@ -16,6 +16,8 @@ namespace PageAlloc
 
         public override Span<byte> GetSpan()
         {
+            if (_handle == null)
+                throw new ObjectDisposedException(nameof(PageAllocMemoryOwner));
             return new Span<byte>(_handle.Value.Address.ToPointer(), _reportedSize);
         }
 

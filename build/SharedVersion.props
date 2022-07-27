@@ -1,0 +1,15 @@
+<Project>
+    <PropertyGroup>
+        <Title>PageAlloc</Title>
+        <Description>Wrapper for VirtualAlloc/mmap that provides paged unmanaged memory allocation</Description>
+        <Authors>kekekeks</Authors>
+        <Copyright>(c) Nikita Tsukanov 2022</Copyright>
+        <PackageProjectUrl>https://github.com/kekekeks/PageAlloc/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/kekekeks/PageAlloc/</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)\key.snk</AssemblyOriginatorKeyFile>
+        <SignAssembly>true</SignAssembly>
+    </PropertyGroup>
+</Project>

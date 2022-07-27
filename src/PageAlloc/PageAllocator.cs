@@ -3,6 +3,9 @@ using System.Runtime.InteropServices;
 
 namespace PageAlloc
 {
+    /// <summary>
+    /// Wraps VirtualAlloc/mmap with a fallback to Marshal.AllocHGlobal
+    /// </summary>
     public static class PageAllocator
     {
         static IAllocator Allocator { get; }
@@ -23,6 +26,11 @@ namespace PageAlloc
                 Allocator = new ClrAllocator();
         }
 
+        /// <summary>
+        /// Allocates unmanaged memory
+        /// </summary>
+        /// <param name="minimumSize">The minimum required memory size</param>
+        /// <returns>A memory handle</returns>
         public static PageAllocMemoryHandle? AllocateHandle(IntPtr minimumSize)
         {
             var size = Utils.RoundToPageSize(minimumSize, Allocator.PageSize);
@@ -32,6 +40,9 @@ namespace PageAlloc
             return new PageAllocMemoryHandle(mem, size);
         }
 
+        /// <summary>
+        /// Frees previously allocated memory
+        /// </summary>
         public static void FreeHandle(PageAllocMemoryHandle handle)
             => Allocator.Free(handle.Address, handle.Size);
     }

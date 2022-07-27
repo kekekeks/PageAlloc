@@ -2,7 +2,7 @@ using System;
 
 namespace PageAlloc
 {
-    public interface IAllocator
+    interface IAllocator
     {
         IntPtr Alloc(IntPtr size);
         void Free(IntPtr address, IntPtr size);

@@ -22,7 +22,7 @@ public struct PageAllocMemoryHandle
 public static class PageMemoryAllocator
 {
     public static IMemoryOwner<byte>? AllocateMemory(int minimumSize, bool truncateReportedSize = false)
-}
+}gi
 
 
 ```
